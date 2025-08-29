@@ -1,13 +1,28 @@
 <!DOCTYPE html>
+<!--
+Border Color: #42BFDD
+Div Background Color: #BBE6E4
+-->
 <html lang="">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
+      <link href="src/assets/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body class="bg-[#272932]">
+    <nav class="sticky">
+        <div class="hidden hamburger">
+            <i class="material-icons text-[#F0F6F6]">menu</i>
+        </div>
+        <div>
+            <ul class="flex nav-links border-4 p-4 m-4 justify-evenly border-[#42BFDD] bg-[#BBE6E4]">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="script.js"></script>
   </body>
 </html>

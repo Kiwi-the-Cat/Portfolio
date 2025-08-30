@@ -9,4 +9,11 @@
     .hamburger {
         display: block;
     }
+    .mainContent {
+        flex-wrap: wrap;
+    }
+}
+
+a {
+    color: #3F826D;
 }

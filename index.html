@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <!--
 Border Color: #42BFDD
-Div Background Color: #BBE6E4
+BG Color: #272932
+Secondary BG Color: #BBE6E4
+Trinary BG Color: #3F826D
 -->
 <html lang="">
   <head>
@@ -13,16 +15,58 @@ Div Background Color: #BBE6E4
     <title>Vite App</title>
   </head>
   <body class="bg-[#272932]">
+    <!--Navigation bar-->
     <nav class="sticky">
+    <!--Hamburger menu icon-->
         <div class="hidden hamburger">
             <i class="material-icons text-[#F0F6F6]">menu</i>
         </div>
+    <!--Put all nav links in here-->
         <div>
-            <ul class="flex nav-links border-4 p-4 m-4 justify-evenly border-[#42BFDD] bg-[#BBE6E4]">
-                <li><a href="index.html">Home</a></li>
+            <ul class="flex nav-links justify-evenly">
+                <li class="hover:bg-zinc-200/70 border-4 border-[#42BFDD] p-2 m-2 bg-[#BBE6E4] rounded-2xl">
+                    <a class="font-bold" href="index.html">Home</a>
+                </li>
+                <li class="hover:bg-zinc-200/70 border-4 border-[#42BFDD] p-2 m-2 bg-[#BBE6E4] rounded-2xl">
+                    <a class="font-bold" href="https://www.tumblr.com/blog/no-semicolons">Tumblr: no-semicolons</a>
+                </li>
+                <li class="hover:bg-zinc-200/70 border-4 border-[#42BFDD] p-2 m-2 bg-[#BBE6E4] rounded-2xl">
+                    <a class="font-bold" href="https://github.com/Kiwi-the-Cat">Github Page</a>
+                </li>
             </ul>
         </div>
     </nav>
+    <!--Main content-->
+    <div class="border-4 border-[#42bfdd] p-4 m-4 rounded-3xl bg-[#BBE6E4]">
+        <h1 class="text-4xl font-bold text-center text-[#272932]">
+            Welcome to My Personal Website
+        </h1>
+    </div>
+
+    <div class="flex justify-around mainContent">
+        <div id="autoBio" class="border-4 border-[#42bfdd] p-4 m-4 rounded-3xl basis-2/5 bg-[#BBE6E4]">
+            <h2 class="text-3xl font-bold text-center text-[#272932]">
+                About Me
+            </h2>
+            <img src="media/pfp.png" class="w-auto has-auto mx-auto p-4" alt="A Picture of a blueish green protogen holding a small asexual pride flag"/>
+            <p class="text-[#272932] text-lg p-4">
+                Hello! My name is Kass, I'm a college student studying at the University of Pittsburgh,
+                I'm majoring in Computer Science. I love coding, gaming, photography,
+                and learning new things. This website is a personal project of mine to showcase my skills
+                and interests. Feel free to explore and learn more about me!
+            </p>
+
+        </div>
+        <div class="p-4 m-4 rounded-3xl basis-3/5">
+        <!--Recent Pages-->
+            <div id="recentPages" class="border-4 border-[#42bfdd] p-4 m-4 rounded-3xl bg-[#BBE6E4]">
+                <h2 class="text-3xl font-bold text-center text-[#272932]">
+                    Recent Pages
+                </h2>
+            </div>
+
+        </div>
+
     <script src="script.js"></script>
   </body>
 </html>
